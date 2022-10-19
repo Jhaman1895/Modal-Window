@@ -1,0 +1,94 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing:  inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    background: linear-gradient(to top left,  #181275c4, #3e456e);
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    height: 40vh;
+}
+
+.show-modal {
+    font-size: 3rem;
+    border: none;
+    border-radius: 10rem;
+    width: 15rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-container {
+    display: flex; 
+    min-width: 80%;
+    height: 50vh;
+}
+
+.modal {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-left: 10rem;
+    border-radius: 10rem;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    margin-top: -10rem;
+}
+
+p {
+    min-width: 20%;
+    max-width: 55%;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    height:auto;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 2rem;
+    margin-top: -2rem;
+}
+
+.hide-modal {
+    align-self: flex-end;
+    margin-right: 7rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    border: none;
+    width: 4rem;
+    background: none;
+    font-size: 3rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 2;
+}
+
+
+.hidden {
+    display: none;
+}
